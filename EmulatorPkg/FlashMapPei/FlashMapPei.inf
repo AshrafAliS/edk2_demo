@@ -45,6 +45,7 @@
 
 [Ppis]
   gEmuThunkPpiGuid                               # PPI ALWAYS_CONSUMED
+  gPeiSampleDriverPpiGuid                        # PRODUCES
 
 [Pcd]
   gEfiMdeModulePkgTokenSpaceGuid.PcdFlashNvStorageFtwWorkingSize

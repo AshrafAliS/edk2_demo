@@ -49,6 +49,7 @@
 
 [Ppis]
   gEmuThunkPpiGuid                               # PPI ALWAYS_CONSUMED
+  #gPeiSampleDriverPpiGuid                        # PRODUCES
 
 [Depex]
   gEmuThunkPpiGuid AND gEfiPeiMemoryDiscoveredPpiGuid

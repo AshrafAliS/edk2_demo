@@ -15,6 +15,12 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #include <Library/PeiServicesTablePointerLib.h>
 #include <Library/PcdLib.h>
 
+// EFI_PEI_PPI_DESCRIPTOR  mPeiSampleDriverPpi = {
+//   (EFI_PEI_PPI_DESCRIPTOR_PPI | EFI_PEI_PPI_DESCRIPTOR_TERMINATE_LIST),
+//   &gPeiSampleDriverPpiGuid,
+//   NULL
+// };
+
 EFI_STATUS
 EFIAPI
 PeimInitializeFirmwareVolumePei (
@@ -120,6 +126,8 @@ Returns:
 
     Index++;
   } while (!EFI_ERROR (Status));
+
+  //PeiServicesInstallPpi (&mPeiSampleDriverPpi);
 
   return Status;
 }

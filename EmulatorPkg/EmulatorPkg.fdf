@@ -129,6 +129,7 @@ INF  MdeModulePkg/Universal/StatusCodeHandler/Pei/StatusCodeHandlerPei.inf
 INF  EmulatorPkg/BootModePei/BootModePei.inf
 INF  EmulatorPkg/AutoScanPei/AutoScanPei.inf
 INF  EmulatorPkg/FirmwareVolumePei/FirmwareVolumePei.inf
+INF  EmulatorPkg/PeiSampleDriver/PeiSampleDriver.inf
 INF  EmulatorPkg/FlashMapPei/FlashMapPei.inf
 INF  EmulatorPkg/ThunkPpiToProtocolPei/ThunkPpiToProtocolPei.inf
 INF  MdeModulePkg/Universal/FaultTolerantWritePei/FaultTolerantWritePei.inf

@@ -20,6 +20,12 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #include <Library/BaseMemoryLib.h>
 #include <Library/PcdLib.h>
 
+EFI_PEI_PPI_DESCRIPTOR  mPeiSampleDriverPpi = {
+  (EFI_PEI_PPI_DESCRIPTOR_PPI | EFI_PEI_PPI_DESCRIPTOR_TERMINATE_LIST),
+  &gPeiSampleDriverPpiGuid,
+  NULL
+};
+
 EFI_STATUS
 EFIAPI
 PeimInitializeFlashMap (
@@ -72,6 +78,8 @@ Returns:
   PcdSet64S (PcdFlashNvStorageVariableBase64, PcdGet64 (PcdEmuFlashNvStorageVariableBase) + FdFixUp);
   PcdSet64S (PcdFlashNvStorageFtwWorkingBase64, PcdGet64 (PcdEmuFlashNvStorageFtwWorkingBase) + FdFixUp);
   PcdSet64S (PcdFlashNvStorageFtwSpareBase64, PcdGet64 (PcdEmuFlashNvStorageFtwSpareBase) + FdFixUp);
+
+  PeiServicesInstallPpi (&mPeiSampleDriverPpi);
 
   return EFI_SUCCESS;
 }

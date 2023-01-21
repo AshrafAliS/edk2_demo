@@ -328,6 +328,7 @@
   MdeModulePkg/Universal/Variable/Pei/VariablePei.inf
   EmulatorPkg/AutoScanPei/AutoScanPei.inf
   EmulatorPkg/FirmwareVolumePei/FirmwareVolumePei.inf
+  EmulatorPkg/PeiSampleDriver/PeiSampleDriver.inf
   EmulatorPkg/FlashMapPei/FlashMapPei.inf
   EmulatorPkg/ThunkPpiToProtocolPei/ThunkPpiToProtocolPei.inf
   MdeModulePkg/Core/DxeIplPeim/DxeIpl.inf
